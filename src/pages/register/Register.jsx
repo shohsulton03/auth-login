@@ -23,7 +23,6 @@ const Register = () => {
     e.target.reset()
     navigate("/login")
   };
-  console.log(user);
   
 
   return (

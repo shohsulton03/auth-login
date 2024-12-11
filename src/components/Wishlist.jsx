@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux'
 
 const Wishlist = () => {
    const wishlist = useSelector(s => s.wishlist.value)
-   console.log(wishlist);
    
   return (
     <div>

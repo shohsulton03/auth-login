@@ -7,7 +7,6 @@ const Login = () => {
   const users = useSelector(s => s.user.value)
   const dispatch = useDispatch()
   const navigate = useNavigate()
-  console.log(users);
   
   
 
@@ -15,7 +14,6 @@ const Login = () => {
     e.preventDefault();
     let formData = new FormData(e.target)
     let user = Object.fromEntries(formData)
-    console.log(user);
     
 
     let existsUser = users.find(item => item.email === user.email)
